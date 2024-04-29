@@ -4,10 +4,11 @@ import Search from "/search.svg";
 import Shop from "/shop.svg";
 import { LoginOutlined } from "@ant-design/icons";
 import { Carousel } from "antd";
+import { Cart } from "./Item";
 // import CarouselItem from "./CarouselItem/index.jsx";
-import flower1 from "/flower1.svg";
-import flower2 from "/flower2.svg";
-import flower3 from "/flower3.svg";
+// import flower1 from "/flower1.svg";
+// import flower2 from "/flower2.svg";
+// import flower3 from "/flower3.svg";
 
 function App() {
   return (
@@ -39,26 +40,29 @@ function App() {
           </button>
         </div>
       </div>
-      <Carousel autoplay className="">
-        <div className="flex flex-row h-[450px] mt-[20px]">
-          <div className="w-2/5 h-full bg-yellow-300"></div>
-          <div className="w-3/5 h-full bg-red-500">
-            <img src={flower1} />
-          </div>
+
+      <Carousel autoplay>
+        <div>
+          <Cart
+            text="Let’s Make a Better"
+            button="SHOP NOW"
+            img="https://s3-alpha-sig.figma.com/img/4575/e3df/52fa214db1f3ce519277860c13b11e21?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ILMwYQqsYTucUF6Fdy9-pQGyxLaCRsejqeFyTU9C2tUnA9RaAqN5xKCBPBtF2j7Y~zUQV73xF6uNLWJiLAhZAxy29m6Ldh002Y9kfEa8IMIZl-iH9wZsnWjT8rGC3F1QTi0IQ354wKE7qkDYMSuG0EEB9KwKxIvqLKAWcGJkzal3cEB32bSVY3wxU2LeJwpUrnQkfZrQdALKEOqnKGrU8XNJ7ypnv2B3PNpsDNDwBWnE-3EB5iWLTeRVlaDREy-RR4AePrrEZSYZRBti7jx~saFs2UBZV0SeqYr8MCVsvtbujX5d9EnQtd93cKOX1a4pN62yLwz--gqrJhL2vdaO6w__"
+          />
         </div>
-        <div className="flex flex-row h-[450px] mt-[20px]">
-          <div className="w-2/5 h-full bg-yellow-300"></div>
-          <div className="w-3/5 h-full bg-red-500">
-            <img src={flower2} />
-          </div>
+        <div>
+          <Cart
+            text="Let’s Make a Better"
+            button="LET'S START"
+            img="https://firebasestorage.googleapis.com/v0/b/aema-image-upload.appspot.com/o/greenshop%2Fimages%2Fhero-flower-1.png?alt=media&token=74ea8d3d-06b5-41e7-bb12-7caaf3035a6d"
+          />
         </div>
-        <div className="flex flex-row h-[450px] mt-[20px]">
-          <div className="w-2/5 h-full bg-yellow-300"></div>
-          <div className="w-3/5 h-full bg-red-500">
-            <img src={flower3} />
-          </div>
+        <div>
+          <Cart
+            text="LET'S OBSERVE A BETTER "
+            button="GET CRIDETS"
+            img="https://firebasestorage.googleapis.com/v0/b/aema-image-upload.appspot.com/o/greenshop%2Fimages%2Fhero-flower-2.png?alt=media&token=5b5addec-d344-4897-a983-95c9b10a1662"
+          />
         </div>
-        \
       </Carousel>
     </>
   );
