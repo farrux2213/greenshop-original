@@ -7,6 +7,9 @@ import {
 import { Button } from "antd";
 import Sliderr from "./Slider.jsx";
 import skidkaFlower from "/skidkaFlower.svg";
+import krug1 from "/krug1.svg";
+import krug2 from "/krug2.svg";
+import krug3 from "/krug3.svg";
 
 const Cart = (props) => {
   return (
@@ -137,7 +140,7 @@ const Goo = (props) => {
             </span>
           </Button>
         </div>
-        <div className="w-full h-[150px] bg-gradient-to-r from-slate-50 to-slate-100">
+        <div className="w-full h-[180px] bg-gradient-to-r from-slate-50 to-slate-100">
           <h2 className="font-sans font-bold text-lg text-left pl-5 pt-3.5">
             Size
           </h2>
@@ -168,15 +171,36 @@ const Goo = (props) => {
             </div>
           </div>
         </div>
-        <div className="w-full h-[465px] bg-green-250">
+        <div className="w-full h-[440px] bg-gradient-to-b from-green-100 to-white-500">
+          <h1 className="font-sans font-normal text-5xl text-green-500 pt-2">
+            Super Sale
+          </h1>
+          <h1 className="font-mono font-bold text-2xl relative top-4 text-zinc-800">
+            UP TO 75% OFF
+          </h1>
           <img
             src={skidkaFlower}
             alt="no img"
-            className="w-[390px] h-full cursor-pointer"
+            className="cursor-pointer m-auto"
+          />
+          <img
+            src={krug1}
+            alt="no img"
+            className="relative top-[-365px] left-[80px]"
+          />
+          <img
+            src={krug2}
+            alt="no img"
+            className="relative left-[290px] top-[-145px]"
+          />
+          <img
+            src={krug3}
+            alt="no img"
+            className="relative top-[-220px] left-[45px]"
           />
         </div>
       </div>
-      <div className="w-2/3 bg-slate-700 h-[1270px]"></div>
+      <div className="w-2/3 bg-slate-700 h-[1275px]"></div>
     </div>
   );
 };
