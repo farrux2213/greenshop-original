@@ -4,7 +4,7 @@ import Search from "/search.svg";
 import Shop from "/shop.svg";
 import { LoginOutlined } from "@ant-design/icons";
 import { Carousel } from "antd";
-import { Cart } from "./Item";
+import { Cart, Goo } from "./Item";
 // import CarouselItem from "./CarouselItem/index.jsx";
 // import flower1 from "/flower1.svg";
 // import flower2 from "/flower2.svg";
@@ -64,6 +64,7 @@ function App() {
           />
         </div>
       </Carousel>
+      <Goo></Goo>
     </>
   );
 }

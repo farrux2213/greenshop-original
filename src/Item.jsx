@@ -5,12 +5,14 @@ import {
   ShoppingCartOutlined,
 } from "@ant-design/icons";
 import { Button } from "antd";
+import Sliderr from "./Slider.jsx";
+import skidkaFlower from "/skidkaFlower.svg";
 
 const Cart = (props) => {
   return (
     <div className="flex font-sans bg-gradient-to-r from-slate-50 to-slate-100 mt-[20px]">
       <div className="flex-2 w-3/5 px-11 py-16">
-        <p className="text-left font-sans">Welcome to GreenShop</p>
+        <p className="text-left font-sans">WELCOME TO GREENSHOP</p>
         <h1 className="uppercase scroll-my-2 text-left font-sans pt-[20px] text-6xl font-bold">
           {props.text} <span className="text-lime-700">Planet</span>
         </h1>
@@ -38,52 +40,173 @@ const Cart = (props) => {
   );
 };
 
-const Out = (props) => {
+const Goo = (props) => {
   return (
-    <div className="relative flex-1 hover:border-t-2 mt-8 border-emerald-600">
-      <div class="absolute bg-[#46a358] text-[#fff] top-2">{props.sale}</div>
-      <div className="bg-slate-100">
-        <img className="" src={props.img} alt="Flower" />
-        <div className=" h-6 flex gap-2 justify-center block hover:hidden">
-          <ShoppingCartOutlined />
-          <HeartOutlined />
-          <SearchOutlined />
+    <div className="flex w-9/10 h-[1270px] mt-[40px] gap-10">
+      <div className="w-1/3 h-[1270px]">
+        <div className="w-full bg-gradient-to-r from-slate-50 to-slate-100 h-[415px]">
+          <h2 className="font-sans font-bold text-lg text-left pl-5 pt-3.5">
+            Categories
+          </h2>
+          <div className="w-[330px] h-full m-auto mt-3.5">
+            <div className="flex-1 flex justify-between w-full h-[40px]">
+              <p className="font-sans font-semibold text-base text-green-600">
+                House Plants
+              </p>
+              <p className="font-sans font-semibold text-base text-green-600">
+                (33)
+              </p>
+            </div>
+            <div className="flex-1 flex justify-between w-full h-[40px]">
+              <p className="font-sans font-normal text-base text-neutral-800">
+                Potter Plants
+              </p>
+              <p className="font-sans font-normal text-base text-neutral-800">
+                (12)
+              </p>
+            </div>
+            <div className="flex-1 flex justify-between w-full h-[40px]">
+              <p className="font-sans font-normal text-base text-neutral-800">
+                Seeds
+              </p>
+              <p className="font-sans font-normal text-base text-neutral-800">
+                (65)
+              </p>
+            </div>
+            <div className="flex-1 flex justify-between w-full h-[40px]">
+              <p className="font-sans font-normal text-base text-neutral-800">
+                Small Plants
+              </p>
+              <p className="font-sans font-normal text-base text-neutral-800">
+                (39)
+              </p>
+            </div>
+            <div className="flex-1 flex justify-between w-full h-[40px]">
+              <p className="font-sans font-normal text-base text-neutral-800">
+                Big Plants
+              </p>
+              <p className="font-sans font-normal text-base text-neutral-800">
+                (23)
+              </p>
+            </div>
+            <div className="flex-1 flex justify-between w-full h-[40px]">
+              <p className="font-sans font-normal text-base text-neutral-800">
+                Succulents
+              </p>
+              <p className="font-sans font-normal text-base text-neutral-800">
+                (12)
+              </p>
+            </div>
+            <div className="flex-1 flex justify-between w-full h-[40px]">
+              <p className="font-sans font-normal text-base text-neutral-800">
+                Trerrariums
+              </p>
+              <p className="font-sans font-normal text-base text-neutral-800">
+                (19)
+              </p>
+            </div>
+            <div className="flex-1 flex justify-between w-full h-[40px]">
+              <p className="font-sans font-normal text-base text-neutral-800">
+                Gardening
+              </p>
+              <p className="font-sans font-normal text-base text-neutral-800">
+                (13)
+              </p>
+            </div>
+            <div className="flex-1 flex justify-between w-full h-[40px]">
+              <p className="font-sans font-normal text-base text-neutral-800">
+                Accessories
+              </p>
+              <p className="font-sans font-normal text-base text-neutral-800">
+                (18)
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="w-full bg-gradient-to-r from-slate-50 to-slate-100 h-[240px]">
+          <h2 className="font-sans font-bold text-lg text-left pl-5 pt-3.5">
+            Price Range
+          </h2>
+          <Sliderr></Sliderr>
+          <p className="font-sans relative left-[-105px]">
+            Price: <span className="text-green-600 font-sans">$39 - $1230</span>
+          </p>
+          <Button className="w-[90px] h-[35px] bg-green-700 border-none relative left-[-122px] top-[12px]">
+            <span className="font-sans text-white hover:text-green-700">
+              Filter
+            </span>
+          </Button>
+        </div>
+        <div className="w-full h-[150px] bg-gradient-to-r from-slate-50 to-slate-100">
+          <h2 className="font-sans font-bold text-lg text-left pl-5 pt-3.5">
+            Size
+          </h2>
+          <div className="w-[330px] m-auto h-auto mt-1.5">
+            <div className="flex-1 flex justify-between w-full h-[40px]">
+              <p className="font-sans font-normal text-base text-neutral-800">
+                Small
+              </p>
+              <p className="font-sans font-normal text-base text-neutral-800">
+                (119)
+              </p>
+            </div>
+            <div className="flex-1 flex justify-between w-full h-[40px]">
+              <p className="font-sans font-normal text-base text-neutral-800">
+                Medium
+              </p>
+              <p className="font-sans font-normal text-base text-neutral-800">
+                (86)
+              </p>
+            </div>
+            <div className="flex-1 flex justify-between w-full h-[40px]">
+              <p className="font-sans font-normal text-base text-neutral-800">
+                Large
+              </p>
+              <p className="font-sans font-normal text-base text-neutral-800">
+                (78)
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="w-full h-[465px] bg-green-250">
+          <img
+            src={skidkaFlower}
+            alt="no img"
+            className="w-[390px] h-full cursor-pointer"
+          />
         </div>
       </div>
-      <div>
-        <h4>{props.name}</h4>
-        <h3 className="text-lime-600">$119.00</h3>
-      </div>
+      <div className="w-2/3 bg-slate-700 h-[1270px]"></div>
     </div>
   );
 };
 
-const Categorie = (props) => {
-  return (
-    <div className="flex mt-6 justify-between">
-      <p>{props.p}</p>
-      <p>{props.n}</p>
-    </div>
-  );
-};
+// const Categorie = (props) => {
+//   return (
+//     <div className="flex mt-6 justify-between">
+//       <p>{props.p}</p>
+//       <p>{props.n}</p>
+//     </div>
+//   );
+// };
 
-const Find = (props) => {
-  return (
-    <div class="flex-1 flex bg-slate-100 gap-28">
-      <div className="flex-1">
-        <img src={props.img} alt="find flower" />
-      </div>
-      <div className="flex-1 flex flex-col items-end pr-5 pt-9">
-        <strong>{props.text}</strong>
-        <p>
-          We are an online plants shop offering a wide ranger of cheap and
-          trendy plants
-        </p>
-        <Button className="button items-center" type="primory">
-          Find More <ArrowRightOutlined />
-        </Button>
-      </div>
-    </div>
-  );
-};
-export { Cart, Out, Categorie, Find };
+// const Find = (props) => {
+//   return (
+//     <div class="flex-1 flex bg-slate-100 gap-28">
+//       <div className="flex-1">
+//         <img src={props.img} alt="find flower" />
+//       </div>
+//       <div className="flex-1 flex flex-col items-end pr-5 pt-9">
+//         <strong>{props.text}</strong>
+//         <p>
+//           We are an online plants shop offering a wide ranger of cheap and
+//           trendy plants
+//         </p>
+//         <Button className="button items-center" type="primory">
+//           Find More <ArrowRightOutlined />
+//         </Button>
+//       </div>
+//     </div>
+//   );
+// };
+export { Cart, Goo };
