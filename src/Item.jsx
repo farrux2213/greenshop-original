@@ -10,6 +10,7 @@ import skidkaFlower from "/skidkaFlower.svg";
 import krug1 from "/krug1.svg";
 import krug2 from "/krug2.svg";
 import krug3 from "/krug3.svg";
+import Selectt from "./Select.jsx";
 
 const Cart = (props) => {
   return (
@@ -200,7 +201,15 @@ const Goo = (props) => {
           />
         </div>
       </div>
-      <div className="w-2/3 bg-slate-700 h-[1275px]"></div>
+      <div className="flex flex-col w-2/3 bg-slate-700 h-[1275px] gap-10">
+        <div className="flex justify-between w-full h-[50px]">
+          <div className="bg-red-400 w-full h-full"></div>
+          <div className="bg-red-800 w-full h-full">
+            <img src={Selectt} />
+          </div>
+        </div>
+        <div className="w-full h-[1185px] bg-yellow-400"></div>
+      </div>
     </div>
   );
 };
