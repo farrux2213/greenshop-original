@@ -1,12 +1,12 @@
-import {
-  ArrowRightOutlined,
-  HeartOutlined,
-  SearchOutlined,
-  ShoppingCartOutlined,
-} from "@ant-design/icons";
+// import {
+//   ArrowRightOutlined,
+//   HeartOutlined,
+//   SearchOutlined,
+//   ShoppingCartOutlined,
+// } from "@ant-design/icons";
 import { Button } from "antd";
 import Sliderr from "./Slider.jsx";
-import skidkaFlower from "/skidkaFlower.svg";
+import skidkaFlower from "/skidkaFlower.png";
 import krug1 from "/krug1.svg";
 import krug2 from "/krug2.svg";
 import krug3 from "/krug3.svg";
@@ -201,11 +201,26 @@ const Goo = (props) => {
           />
         </div>
       </div>
-      <div className="flex flex-col w-2/3 bg-slate-700 h-[1275px] gap-10">
+      <div className="flex flex-col w-2/3 h-[1275px] gap-10">
         <div className="flex justify-between w-full h-[50px]">
-          <div className="bg-red-400 w-full h-full"></div>
-          <div className="bg-red-800 w-full h-full">
-            <img src={Selectt} />
+          <div className="w-full h-full flex">
+            <div className="w-[270px] h-full flex justify-between p-[10px]">
+              <h2 className="font-sans font-normal text-base text-gray-800 border-solid">
+                All Plants
+              </h2>
+              <h2 className="font-sans font-normal text-base text-gray-800">
+                New Arrivals
+              </h2>
+              <h2 className="font-sans font-normal text-base text-gray-800">
+                Sale
+              </h2>
+            </div>
+          </div>
+          <div className="w-[350px] h-full flex p-[8px]  ">
+            <h3 className="p-[5px] font-mono font-normal text-gray-800">
+              Short by:
+            </h3>
+            <Selectt></Selectt>
           </div>
         </div>
         <div className="w-full h-[1185px] bg-yellow-400"></div>

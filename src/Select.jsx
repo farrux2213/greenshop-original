@@ -12,23 +12,23 @@ const filterOption = (input, option) =>
 const Selectt = () => (
   <Select
     showSearch
-    placeholder="Select a person"
+    placeholder="Select a variety"
     optionFilterProp="children"
     onChange={onChange}
     onSearch={onSearch}
     filterOption={filterOption}
     options={[
       {
-        value: "jack",
-        label: "Jack",
+        value: "expensive sorting",
+        label: "Expensive sorting",
       },
       {
-        // value: "lucy",
-        // label: "Lucy",
+        value: "default sorting",
+        label: "Default sorting",
       },
       {
-        value: "tom",
-        label: "Tom",
+        value: "cheap sorting",
+        label: "Cheap sorting",
       },
     ]}
   />
