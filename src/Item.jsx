@@ -205,7 +205,7 @@ const Goo = (props) => {
         <div className="flex justify-between w-full h-[50px]">
           <div className="w-full h-full flex">
             <div className="w-[270px] h-full flex justify-between p-[10px]">
-              <h2 className="font-sans font-normal text-base text-gray-800 border-solid">
+              <h2 className="font-sans font-normal text-base text-gray-800 border-solid hover:text-green-600 hover:rounded-l hover:border-green-600">
                 All Plants
               </h2>
               <h2 className="font-sans font-normal text-base text-gray-800">
