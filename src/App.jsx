@@ -5,6 +5,10 @@ import Shop from "/shop.svg";
 import { LoginOutlined } from "@ant-design/icons";
 import { Carousel } from "antd";
 import { Cart, Goo } from "./Item";
+import Paginationn from "./Pagination";
+import { Mask } from "./Item";
+import { Blog, Kaktus, Address, SocialMedia } from "./Item";
+
 // import CarouselItem from "./CarouselItem/index.jsx";
 // import flower1 from "/flower1.svg";
 // import flower2 from "/flower2.svg";
@@ -64,7 +68,30 @@ function App() {
           />
         </div>
       </Carousel>
+
       <Goo></Goo>
+
+      <div className="relative">
+        <div className="inline-block absolute right-0 ">
+          <Paginationn></Paginationn>
+        </div>
+      </div>
+      <div className="w-9/10 h-[250px]"></div>
+      <Mask></Mask>
+      <div className="mt-[100px]">
+        <h1 className="font-sans font-bold text-3xl">Our Blog Posts</h1>
+        <p className="font-sans font-normal text-sm mt-[20px] text-gray-500">
+          We are an online plant shop offering a wide range of cheap and trendy
+          plants.
+        </p>
+      </div>
+      <Blog></Blog>
+      <Kaktus></Kaktus>
+      <Address></Address>
+      <SocialMedia></SocialMedia>
+      <p className="font-sans font-normal m-auto text-sm mt-[10px]">
+        © 2021 GreenShop. All Rights Reserved.
+      </p>
     </>
   );
 }
