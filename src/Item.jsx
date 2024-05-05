@@ -8,12 +8,9 @@ import {
   TwitterOutlined,
   LinkedinOutlined,
   YoutubeOutlined,
-  HeartOutlined,
-  SearchOutlined,
-  ShoppingCartOutlined,
 } from "@ant-design/icons";
 import { Button } from "antd";
-import Sliderr from "./Slider.jsx";
+import { Sliderr } from "./Slider.jsx";
 import skidkaFlower from "/skidkaFlower.png";
 import krug1 from "/krug1.svg";
 import krug2 from "/krug2.svg";
@@ -166,14 +163,15 @@ const Goo = () => {
             Price Range
           </h2>
           <Sliderr></Sliderr>
-          <p className="font-sans relative left-[-105px]">
-            Price: <span className="text-green-600 font-sans">$39 - $1230</span>
-          </p>
-          <Button className="w-[90px] h-[35px] bg-green-700 border-none relative left-[-122px] top-[12px]">
+
+          {/* <Button
+            onClick={ResetRange}
+            className="w-[90px] h-[35px] bg-green-700 border-none relative left-[-122px] top-[12px]"
+          >
             <span className="font-sans text-white hover:text-green-700">
               Filter
             </span>
-          </Button>
+          </Button> */}
         </div>
         <div className="w-full h-[180px] bg-gradient-to-r from-slate-50 to-slate-100">
           <h2 className="font-sans font-bold text-lg text-left pl-5 pt-3.5">
