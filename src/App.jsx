@@ -82,7 +82,7 @@ function App() {
         <h1 className="font-sans font-bold text-3xl">Our Blog Posts</h1>
         <p className="font-sans font-normal text-sm mt-[20px] text-gray-500">
           We are an online plant shop offering a wide range of cheap and trendy
-          plants.
+          plants. Hello from Farrukh !!!
         </p>
       </div>
       <Blog></Blog>
