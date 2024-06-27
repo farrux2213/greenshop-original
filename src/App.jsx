@@ -90,7 +90,7 @@ function App() {
       <Address></Address>
       <SocialMedia></SocialMedia>
       <p className="font-sans font-normal m-auto text-sm mt-[10px]">
-        © 2021 GreenShop. All Rights Reserved.
+        © 2024 GreenShop. All Rights Reserved.
       </p>
     </>
   );
